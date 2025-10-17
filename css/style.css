@@ -1,0 +1,400 @@
+/* ====== RESET GENERAL ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #111;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-right input {
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+
+/* ====== BANNER ====== */
+.banner {
+  background-image: url("../imagenes/banner-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-content img {
+  width: 400px;
+}
+
+.banner-content p {
+  margin: 15px 0 25px;
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.btn--primary {
+  background-color: #c8102e;
+  color: #fff;
+}
+
+.btn--secondary {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* ====== SECCIONES GENERALES ====== */
+.section {
+  padding: 60px 0;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+/* ====== SHOP SECTION ====== */
+.explore {
+  background-color: #4B3D8F;
+}
+
+.explore .container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f8d36b;
+  width: 250px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 12px 14px 5px;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 13px;
+  margin: 0 14px 10px;
+}
+
+.card .btn-card {
+  display: inline-block;
+  margin: 10px 14px 18px;
+  padding: 8px 12px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* ====== DISNEY+ ====== */
+.disneyplus {
+  background-color: #004950;
+  color: #fff;
+}
+
+.disneyplus h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.disneyplus-container {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.disneyplus-container article {
+  width: 300px;
+}
+
+.disneyplus-container img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.disneyplus-container p {
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+.disneyplus-container a {
+  font-size: 12px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ====== COMING SOON ====== */
+.coming-soon {
+  background-color: #f5f5f5;
+}
+
+.coming-soon h2 {
+  font-size: 26px;
+  margin-bottom: 35px;
+  color: #111;
+}
+
+.coming-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.coming-container article {
+  width: 180px;
+  text-align: center;
+}
+
+.coming-container img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.coming-container h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.coming-container p {
+  font-size: 12px;
+  color: #666;
+}
+
+/* ====== PARKS  ====== */
+.parks {
+  background-color: #fff;
+}
+
+.parks h2 {
+  font-size: 26px;
+  color: #111;
+  margin-bottom: 40px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.parks-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.park-card {
+  background: #fff;
+  width: 420px;
+  text-align: center;
+}
+
+.park-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.park-card h3 {
+  font-size: 18px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.park-card p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+  margin: 0 10px 15px;
+}
+
+.park-card .btn-card {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 18px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.park-card .btn-card:hover {
+  background-color: #444;
+}
+
+/* ====== VISA  ====== */
+.visa {
+  background-image: url("../imagenes/more-background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #001f3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.visa-overlay {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 40px 60px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 700px;
+}
+
+.visa-text h2 {
+  font-size: 24px;
+  color: #003087;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.visa-text h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.visa-text p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.visa-text .btn-card {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.visa-text .btn-card:hover {
+  background-color: #333;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  background-color: #fff;
+  padding: 25px;
+  font-size: 13px;
+  color: #666;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .visa-overlay {
+    padding: 20px;
+  }
+  .banner-content img {
+    width: 280px;
+  }
+}
